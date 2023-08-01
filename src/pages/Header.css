@@ -1,0 +1,95 @@
+.Header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.menuDiv,
+.acessoAoPerfilDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuDiv {
+  width: 11rem;
+}
+
+.acessoAoPerfilDiv {
+  width: 5rem;
+  height: 4rem;
+}
+
+.avatarImg {
+  width: 3rem;
+}
+
+.openMenu {
+  display: none;
+}
+
+.menuOpened {
+  display: inline-block;
+}
+
+ul {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  height: 40rem;
+  text-align: left;
+  list-style: none;
+  padding: 1rem;
+}
+
+.closeIcon {
+  position: absolute;
+  left: 0;
+  margin: 1rem 0 0 1.5rem;
+  z-index: 1;
+}
+
+li {
+  margin: 0.5rem;
+}
+
+@media (min-width: 950px) {
+  .closeIcon {
+    display: none;
+  }
+  .iconMenu {
+    display: none;
+  }
+  .Header {
+    display: flex;
+    align-items: center;
+  }
+
+  .openMenu {
+    display: flex;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    position: inherit;
+    font-size: 18px;
+    padding: 0;
+  }
+  li {
+    margin: 0 0.7rem 0 0;
+  }
+  .iconLogo {
+    height: 1.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .iconLogo {
+    height: 2rem;
+  }
+  li {
+    font-size: 20px;
+  }
+}
